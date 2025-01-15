@@ -1,0 +1,29 @@
+<template>
+    <lightning-card title="Delete Duplicate Attachments" icon-name="utility:delete">
+        <!-- Spinner -->
+        <template if:true={isLoading}>
+            <lightning-spinner alternative-text="Loading" size="medium"></lightning-spinner>
+        </template>
+
+        <!-- Display Duplicate Files -->
+        <template if:true={duplicates.length}>
+            <p><strong>Found Duplicate Files:</strong></p>
+            <lightning-datatable
+                key-field="Id"
+                data={duplicates}
+                columns={columns}
+                onrowselection={handleRowSelection}>
+            </lightning-datatable>
+            <lightning-button 
+                label="Delete Selected" 
+                variant="brand" 
+                onclick={handleDelete}>
+            </lightning-button>
+        </template>
+
+        <!-- No Duplicates Message -->
+        <template if:false={duplicates.length}>
+            <p>No duplicate files found.</p>
+        </template>
+    </lightning-card>
+</template>
