@@ -1,6 +1,6 @@
-# About the Project
+# Salesforce Implementation for the EdTech Industry
 
-## Salesforce Implementation for the EdTech Industry
+## About the Project
 
   The **Salesforce Implementation for the EdTech Industry** project focuses on the implementation of Salesforce, a leading Customer Relationship Management (CRM) platform, to address the unique operational challenges of the EdTech industry. Designed to enhance efficiency across student enrollment, lead management, marketing, and analytics, this initiative delivers a comprehensive, data-driven solution tailored to the sector's needs. Key objectives include streamlining the lead-to-enrollment process, automating repetitive tasks, and enabling targeted marketing campaigns through robust data insights.
   
